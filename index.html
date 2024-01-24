@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="./assets/logo-alura.png"
+      type="image/x-icon"
+      class="favicon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo-alura.png" alt="logo da alura" />
+    </header>
+
+    <main>
+      <textarea
+        id="textarea"
+        oninput="validarEntrada(this)"
+        class="text-area"
+        placeholder="Digite seu texto"
+      ></textarea>
+
+      <div class="alert-buttons">
+        <div class="alert-container">
+          <img src="./assets/alert.png" alt="imagem de alerta" />
+          <span class="alert-mensagem"
+            >Apenas letras minúsculas e sem acento.</span
+          >
+        </div>
+  
+        <div class="buttons-container">
+          <button onclick="codificar()" class="btn-codificar">
+            Criptografar
+          </button>
+          <button onclick="decodificar()" class="btn-decodificar">
+            Descriptografar
+          </button>
+        </div>
+      </div>
+
+      <div class="response-container" id="containerResponse">
+        <img src="./assets/illustration.svg" alt="" id="illustration">
+        <p class="p-response">
+          <span class="title-response">Nenhuma mensagem encontrada</span>
+          <span
+            >Digite um texto que você deseja criptografar ou
+            descriptografar.</span
+          >
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>Desenviado por Mateus Augusto</p>
+      <p>|</p>
+      <p>Challenge Alura</p>
+      <p>|</p>
+      <div class="redes">
+        <a href="https://gitub.com/MateusAugustoo"><img src="./assets/github.svg" alt="icone do github"></a>
+        <a href="https://"><img src="./assets/linkedin.svg" alt="icone do linkdIn"></a>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
